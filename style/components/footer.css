@@ -1,0 +1,133 @@
+.footer{
+    background: #1d0d44;
+    color: #aeb1be;
+    padding: 100px 0 31px;
+}
+.footer-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer-items h3{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.footer-item{
+    padding: 0 15px;
+}
+.about-us p{
+    margin-top: 19px;
+    font-size: 14px;
+    line-height: 1.71429;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+.about-us img{
+    margin-top: 65px;
+}
+.rights{
+    margin-top: 68px;
+    color: #493f68;
+}
+
+.twitter-icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 19px;
+}
+.twitter-icons i{
+    font-size: 20px;
+    margin-top: 16px;
+    color: #37f1f8;
+}
+.twitter-icons i:first-child{
+    margin-top: 0;
+}
+
+
+.get-in-touch-inputs{
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.input-email-name{
+    width: 100%;
+}
+.input-email-name input{
+    width: calc(100% - 21px);
+    padding: 15px 0;
+    padding-left: 21px;
+    outline: none;
+    border-radius: 6px;
+    border: 0;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.input-message textarea{
+    height: 120px;
+    width: calc(100% - 21px);
+    padding: 15px 0;
+    padding-left: 21px;
+    outline: none;
+    border-radius: 6px;
+    border: 0;
+    font-size: 14px;
+    margin-top: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+.input-email-name input::placeholder{
+    color: #29293a;
+    transition: 0.2s;
+}
+.input-email-name textarea::placeholder{
+    color: #29293a;
+    transition: 0.2s;
+}
+.input-email-name textarea:focus::placeholder{
+    color: transparent;
+}
+.input-email-name input:focus::placeholder{
+    color: transparent;
+}
+
+.send-button{
+    margin-top: 8px;
+}
+.send-button a{
+    font-size: 16px;
+    margin: 0;
+    padding: 14px 40px;
+}
+
+@media(max-width:1000px){
+    .footer-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .get-in-touch{
+        max-width: 600px;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin-top: 30px;
+    }
+}
+@media(max-width:670px){
+    .footer-items{
+        grid-template-columns: 100%;
+    }
+    .get-in-touch{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .twitter-feed{
+        margin-top: 30px;
+    }
+    .footer{
+        padding: 50px 0 31px;
+    }
+    .rights{
+        margin-top: 48px;
+    }
+}

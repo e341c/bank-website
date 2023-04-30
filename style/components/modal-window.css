@@ -1,0 +1,104 @@
+.modal-window-background{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.modal-window{
+    padding: 15px 25px;
+    border: 0;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #5428a4, #7b59d0);
+    width: 540px;
+}
+.modal-input{
+    display: flex;
+    padding: 10px 15px 30px;
+}
+.modal-window-top{
+    position: relative;
+}
+.modal-window h3{
+    padding: 20px 15px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-size: 20px;
+}
+.modal-window-xmark{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    color: #fff;
+    opacity: .5;
+    transition: 0.3s;
+    font-size: 20px;
+}
+.modal-window-xmark:hover{
+    opacity: 1;
+}
+.modal-input-email{
+    width: 100%;
+}
+.modal-window-button{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 20px 0px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background: linear-gradient(to bottom, transparent, #7b59d0);
+    background-color: #a371f7;
+    min-height: 48px;
+    padding: 13px 30px;
+    border: 0;
+    border-radius: 40px;
+    margin-left: 15px;
+    min-width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+.modal-window button:hover{
+    background: white;
+    color: #a371f7;
+}
+
+.modal-window-close{
+    display: none;
+}
+
+@media(max-width:780px){
+    .modal-input{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .modal-window button{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .modal-window-button{
+        width: 100%;
+    }
+}
+@media(max-width:590px){
+    .modal-window{
+        width: 80%;
+    }
+}
+@media(max-width:400px){
+    .modal-window{
+        width: 90%;
+        padding: 10px 20px;
+    }
+    .modal-input{
+        padding: 5px 10px 25px;
+    }
+}

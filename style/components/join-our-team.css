@@ -1,0 +1,31 @@
+.join-our-team{
+    background-image: url(https://livedemo00.template-help.com/wt_prod-18537/images/bg-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0 430px;
+}
+.join-our-team-text{
+    text-align: center;
+    font-weight: 300;
+    color: #29293a;
+}
+.join-our-team-text h2{
+    font-size: 39px;
+}
+.join-our-team-text p{
+    margin-top: 46px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.join-our-team-button{
+    margin-top: 30px;
+}
+
+@media(max-width:570px){
+    .join-our-team-text h2{
+        font-size: 28px;
+    }
+    .join-our-team{
+        padding: 50px 0 380px;
+    }
+}

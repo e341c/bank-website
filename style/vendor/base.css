@@ -1,0 +1,21 @@
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.body{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+@media(max-width:1200px){
+    .container{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+@media(max-width:768px){
+    .container{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

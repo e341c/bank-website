@@ -1,0 +1,152 @@
+.financial{
+    padding: 100px 0;
+    background-color: #1d0d44;
+    color: white;
+}
+.financial-item h2{
+    font-size: 39px;
+    text-align: center;
+}
+.financial-content{
+    margin: 60px 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aim{
+    width: 33%;
+    padding: 0 15px;
+    font-size: 14px;
+}
+.aim i{
+    font-size: 30px;
+    color: #a371f7;
+}
+.aim p:nth-child(2){
+    margin-top: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+}
+.aim p:nth-child(3){
+    margin-top: 17px;
+    line-height: 1.71429;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: #36f1f8;
+}
+.aim p:last-child{
+    font-style: italic;
+    color: #828590;
+    line-height: 1.71429;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.customers{
+    width: 47%;
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 15px;
+    letter-spacing: 0.05em;
+    line-height: 1.71429;
+    padding: 0 15px;
+}
+
+.progressbar-circle{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+.progressbar-circle-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.progressbar-circle1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: 
+        radial-gradient(closest-side, #1d0d44 96%, transparent 80% 100%),
+        conic-gradient(#37f1f8 50%, #a371f7 0);    
+    animation-name: progressbar-circle1;
+    animation-duration: 2s;
+
+}
+@keyframes progressbar-circle1{
+    0%{    background: 
+        radial-gradient(closest-side, #1d0d44 96%, transparent 80% 100%),
+        conic-gradient(#37f1f8 0%, #a371f7 0); }
+    100%{
+        background: 
+        radial-gradient(closest-side, #1d0d44 96%, transparent 80% 100%),
+        conic-gradient(#37f1f8 50%, #a371f7 0); 
+    }
+}
+.progressbar-circle2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: solid #a371f7 2px;
+    border-radius: 50%;
+}
+.progressbar-circle p{
+    margin-top: 17px;
+    font-weight: 100;
+    font-size: 14px;
+}
+.progressbar-circle h3{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+@media(max-width:990px){
+    .aim{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .customers{
+        width: 80%;
+        margin-top: 15px;
+        padding: 0 15px;
+    }
+    .progressbar-circle{
+        margin-top: 20px;
+    }
+    .progressbar-circle-item{
+        margin-bottom: 20px;
+    }
+    .financial-item h2{
+        font-size: 28px;
+    }
+}
+@media(max-width:768px){
+    .customers{
+        width: 100%;
+    }
+    .progressbar-circle{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media(max-width:570px){
+    .financial{
+        padding: 50px 0;
+    }
+    .financial-content{
+        margin: 30px 15px 20px;
+    }
+}

@@ -1,0 +1,93 @@
+.contact-information{
+    width: 40%;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-information h3{
+    font-size: 20px;
+    font-weight: 300;
+    color: #29293a;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+
+.contact-text{
+    display: flex;
+}
+.contact-text-icons{
+    width: 24px;
+    height: 24px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-text-icons i{
+    margin-bottom: 27px;
+}
+.contact-text a{
+    font-size: 14px;
+    color: #828590;
+    line-height: 1.71429;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: .4s;
+}
+.contact-text a:hover{
+    color: #7b59d0;
+}
+.contact-text i{
+    font-size: 20px;
+    padding: 7px 0px;
+    color: #7b59d0;
+}
+.bank-adress{
+    margin-top: 30px;
+    display: flex;
+}
+.contact-number{
+    margin-top: 15px;
+    display: flex;
+}
+.contact-email{
+    margin-top: 15px;
+    display: flex;
+}
+
+
+.social-media{
+    margin-top: 20px;
+}
+.social-media a{
+    font-size: 20px;
+    margin-left: 25px;
+    color: #aeb1be;
+    text-decoration: none;
+    transition: .4s;
+}
+.social-media a:first-child{
+    margin-left: 0;
+}
+.social-media a:hover{
+    color: #7b59d0;
+}
+
+@media(max-width:990px){
+    .contact-information{
+        width: 50%;
+    }
+    .social-media a{
+        margin-left: 10px;
+    }
+}
+@media(max-width:700px){
+    .contact-information{
+        width: 100%;
+        padding: 25px 0 50px;
+    }
+}

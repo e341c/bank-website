@@ -1,0 +1,137 @@
+.about3-body{
+    padding: 100px 0;
+    color: #29293a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about3-body h2{
+    font-weight: 300;
+    font-size: 39px;
+    line-height: 1.1;
+    text-align: center;
+}
+.about3-top{
+    line-height: 1.7;
+    font-weight: 300;  
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: 21px 215px 0 215px;
+}
+.about3-item{
+    margin: 30px 15px 20px 15px;
+    display: flex;
+    justify-content: center;
+}
+.about3-item-num{
+    display: flex;
+}
+.about3-img{
+    margin-right: 15px;
+    width: 570px;
+    height: auto;
+    background-image: url(https://livedemo00.template-help.com/wt_prod-18537/images/index-1-2-570x352.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about3-text{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    width: 470px;
+    padding: 0 15px;
+    margin-left: 10%;
+}
+.progressbar-text{
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.progressbar1{
+    width: 75%; 
+    background-color: #7b59d0;
+    animation-name: progressbar1;
+    animation-duration: 2s;
+}
+.progressbar2{
+    width: 50%; 
+    background-color: #7b59d0;
+    animation-name: progressbar2;
+    animation-duration: 2s;
+}
+.about3-button{
+    margin-top: 30px;
+}
+.about3-button a{
+    padding: 14px 51px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background: linear-gradient(to bottom, transparent, #7b59d0);
+    background-color: #a371f7;
+    box-shadow: 0 3px 21px 4px rgb(41 41 58 / 20%);
+    border: 0;
+    border-radius: 40px;
+    transition: 0.4s;
+    min-width: 220px;
+}
+.about3-button a:hover{
+    background: #1d0d44;
+}
+
+@media(max-width:1300px){
+    .about3-text{
+        margin-left: 0;
+    }
+}
+@media(max-width:1100px){
+    .about3-item{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+    .about3-text{
+        margin-left: 0;
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .about3-img{
+        margin-right: 0;
+        width: 100%;
+        min-height: 352px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .about3-top{
+        margin: 0;
+        margin-top: 20px;
+    }
+    .about3-body{
+        padding: 50px 0;
+    }
+    .about3-body h2{
+        font-size: 28px;
+    }
+}
+@media(max-width:590px){
+    .about3-img{
+        min-height: 200px;
+    }
+} 
+
+/* anim */
+@keyframes progressbar1{
+    0%{width: 0%;};
+    100%{width: 100%;}
+}
+@keyframes progressbar2{
+    0%{width: 0%;};
+    100%{width: 100%;}
+}
